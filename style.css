@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe6f2;
+    text-align: center;
+  }
+  
+  /* Header */
+  header {
+    background-color: #ffcccb;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Space between title and buttons */
+  }
+  
+  /* Category Container (Buttons below title, above cat photos) */
+  .category-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* Space below title */
+    margin-bottom: 20px; /* Space above the images */
+  }
+  
+  /* Category Buttons - Side by Side with 5px gap */
+  .category-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* Increased spacing from 5px to 10px */
+  }
+  
+  
+  /* Category Button Styles */
+  .category-buttons button {
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 120px; /* Uniform button width */
+    text-align: center;
+  }
+  
+  /* Updated Category Button Styles */
+.jade-btn {
+    background-color: #ADD8E6; /* Light Blue */
+    color: #333;
+  }
+  .meme-btn {
+    background-color: #90EE90; /* Light Green */
+    color: #333;
+  }
+  .gatos-btn {
+    background-color: #a52a2a; /* Remains unchanged */
+    color: white;
+  }
+  .cute-btn {
+    background-color: #ff69b4; /* Remains unchanged */
+    color: white;
+  }
+  .all-btn {
+    background-color: #d8bfd8; /* Remains unchanged */
+    color: black;
+  }
+  .doomscroll-btn {
+    background-color: #800080; /* Purple */
+    color: white;
+  }
+  
+  
+  /* Hover Effect for Category Buttons */
+  .category-buttons button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+  
+  /* Arrow Buttons (Navigation) */
+  .arrow {
+    background-color: rgba(255, 105, 180, 0.9); /* Medium pink */
+    color: white;
+    border: none;
+    padding: 15px 18px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Arrow Hover Effect */
+  .arrow:hover {
+    background-color: rgba(220, 20, 120, 1);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0px 0px 15px rgba(220, 20, 120, 0.8);
+  }
+  
+  /* Arrow Button Positions */
+#prevBtn {
+    left: 5%;
+  }
+  #nextBtn {
+    right: 5%;
+  }
+  
+  /* Apply default emoji to arrow buttons (this applies only to #nextBtn now) */
+  .arrow::before {
+    content: '😺';
+    font-size: 24px;
+  }
+  
+  /* Override for Right Arrow Button */
+  #nextBtn::before {
+    content: '😼';
+  }
+  
+  /* Adjust Left Arrow Button: Remove emoji from ::before and add with ::after */
+  #prevBtn::before {
+    content: ''; /* Clear emoji from before */
+  }
+  #prevBtn::after {
+    content: '😺';
+    font-size: 24px;
+    margin-left: 5px; /* Emoji will appear to the right of the arrow */
+  }
+  
+  
+  /* Image Carousel (Cat Photos & Arrows) */
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 500px;
+    margin-top: 40px; /* Push carousel lower so category buttons are visible */
+  }
+  
+  /* Cat Image Styling within Carousel */
+  .carousel img {
+    max-width: 80%;
+    max-height: 400px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  

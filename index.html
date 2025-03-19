@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cat Paradise</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>❤️Cat's Cats😸</h1>
+  </header>
+
+  <!-- Category Buttons (Below Title, Above Cat Photos) -->
+  <div class="category-container">
+    <div class="category-buttons">
+      <button class="jade-btn" onclick="filterCats('jade')">Jade</button>
+      <button class="gatos-btn" onclick="filterCats('gatos')">Gatos</button>
+      <button class="cute-btn" onclick="filterCats('cute')">Cute</button>
+      <button class="meme-btn" onclick="filterCats('meme')">Meme</button>
+      <button class="all-btn" onclick="filterCats('all')">All</button>
+      <button class="doomscroll-btn" onclick="filterCats('doomscroll')">DOOMSCROLL</button>
+    </div>
+  </div>
+  
+  
+  <!-- Image Carousel -->
+  <div class="carousel">
+    <button id="prevBtn" class="arrow">❮</button>
+    <img id="cat-image" src="" alt="Cat Image" />
+    <button id="nextBtn" class="arrow">❯</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
