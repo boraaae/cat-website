@@ -15,9 +15,9 @@ function generateImages(prefix, count, category) {
 
 // Generate image arrays for each category
 const jadeImages = generateImages("jade", 44, "jade");
-const memeImages = generateImages("meme", 76, "meme");
-const gatosImages = generateImages("gatos", 21, "gatos");
-const cuteImages = generateImages("cute", 54, "cute");
+const memeImages = generateImages("meme", 79, "meme");
+const gatosImages = generateImages("gatos", 23, "gatos");
+const cuteImages = generateImages("cute", 97, "cute");
 
 // Combine them all into one array
 const catImages = [...jadeImages, ...memeImages, ...gatosImages, ...cuteImages];
